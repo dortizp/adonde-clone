@@ -5,6 +5,11 @@ const API_BASE = import.meta.env.VITE_API_URL || '/api'
 const USE_MOCK = import.meta.env.VITE_USE_MOCK === 'true'
 
 async function request(endpoint, options = {}) {
+  // If mock mode is enabled, use mock data directly
+  if (USE_MOCK) {
+    return handleMockRequest(endpoint, options)
+  }
+
   const token = localStorage.getItem('token')
 
   const config = {
@@ -24,13 +29,16 @@ async function request(endpoint, options = {}) {
       throw new Error(error.message || 'Error en la solicitud')
     }
 
+    // Check if response is JSON (not HTML from SPA fallback)
+    const contentType = response.headers.get('content-type')
+    if (!contentType || !contentType.includes('application/json')) {
+      throw new Error('Invalid response')
+    }
+
     return response.json()
   } catch (err) {
-    // If backend unavailable and we have mock handlers, use them
-    if (USE_MOCK || err.message === 'Failed to fetch') {
-      return handleMockRequest(endpoint, options)
-    }
-    throw err
+    // If backend unavailable, use mock handlers
+    return handleMockRequest(endpoint, options)
   }
 }
 
