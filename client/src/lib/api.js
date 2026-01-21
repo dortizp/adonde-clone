@@ -74,9 +74,37 @@ function handleMockRequest(endpoint, options = {}) {
     return Promise.reject(new Error('No autenticado'))
   }
 
-  // Mock favorites
-  if (endpoint === '/favorites') {
-    return Promise.resolve({ favorites: [] })
+  // Mock favorites - use localStorage for persistence
+  if (endpoint === '/favorites' || endpoint.startsWith('/favorites/')) {
+    const storedFavorites = JSON.parse(localStorage.getItem('mock_favorites') || '[]')
+
+    // GET favorites
+    if (!options.method || options.method === 'GET') {
+      const favorites = storedFavorites.map(id => ({
+        property_id: id,
+        property: mockProperties.find(p => p.id === id)
+      })).filter(f => f.property)
+      return Promise.resolve({ favorites })
+    }
+
+    // POST - add favorite
+    if (options.method === 'POST') {
+      const body = JSON.parse(options.body || '{}')
+      const propertyId = body.propertyId
+      if (!storedFavorites.includes(propertyId)) {
+        storedFavorites.push(propertyId)
+        localStorage.setItem('mock_favorites', JSON.stringify(storedFavorites))
+      }
+      return Promise.resolve({ message: 'Agregado a favoritos' })
+    }
+
+    // DELETE - remove favorite
+    if (options.method === 'DELETE') {
+      const propertyId = endpoint.split('/')[2]
+      const updated = storedFavorites.filter(id => id !== propertyId)
+      localStorage.setItem('mock_favorites', JSON.stringify(updated))
+      return Promise.resolve({ message: 'Eliminado de favoritos' })
+    }
   }
 
   // Mock other endpoints
