@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Mortgage Calculator</h1>
+    <form action="/mortgage-calculator" method="post" class="mortgage-calculator-form">
+        <label for="amount">Monto Soles</label>
+        <input type="text" name="amount" value="<%= property.price_soles %>" id="amount">
+        <label for="tea">TEA</label>
+        <input type="text" name="tea" id="tea">
+        <label for="months">Numero de meses</label>
+        <input type="text" name="months" id="months">
+        <button type="submit">Calcular</button>
+    </form>
+    
+</body>
+</html>

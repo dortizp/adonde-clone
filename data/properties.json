@@ -1,0 +1,169 @@
+{
+    "listings": [
+        {
+            "id": "4fcf94eb-2600-4775-a339-856003ba8500",
+            "title": "Albamar | Quadra",
+            "address": "Av Bolivia 855, Breña, Lima",
+            "status": "En planos · Entrega enero 2028",
+            "price_soles": 175000,
+            "units": "165 un.",
+            "bedrooms": "1 a 3 dorm.",
+            "area_range_m2": "27 a 130 m²",
+            "amenities": [
+                "Gimnasio",
+                "Área de juegos",
+                "Parrilla"
+            ]
+        },
+        {
+            "id": "f6454a11-fd00-4d1b-9894-a9f04289877f",
+            "title": "Ícaro 164 Chorrillos",
+            "address": "Icaro 164, Chorrillos, Lima",
+            "status": "En planos · Entrega 4° trimestre 2027",
+            "price_soles": 196339,
+            "units": "310 un.",
+            "bedrooms": "1 a 3 dorm.",
+            "area_range_m2": "40 a 117 m²",
+            "amenities": [
+                "Gimnasio",
+                "Área de juegos",
+                "Parrilla",
+                "Áreas verdes"
+            ]
+        },
+        {
+            "id": "aa869d40-4300-43b0-9753-22707ea41a4e",
+            "title": "Petit Thouars 1598",
+            "address": "Av. Petit Thouars 1598, Lince, Lima",
+            "status": "Entrega inmediata",
+            "price_soles": 280000,
+            "units": "80 un.",
+            "bedrooms": "1 a 2 dorm.",
+            "area_range_m2": "32 a 52 m²",
+            "amenities": []
+        },
+        {
+            "id": "65b15736-1dd6-4208-bbc4-21bc0d7a6ff8",
+            "title": "Departamento de 3 Dormitorios en Surco Cerca de la Universidad de Lima",
+            "address": "Santiago de Surco, Lima",
+            "status": "Entrega: inmediata",
+            "price_soles": 848900,
+            "price_usd": 235805,
+            "area_m2": 89,
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "amenities": [
+                "Lobby",
+                "Zona de parrillas",
+                "Gimnasio",
+                "Pet Shower",
+                "Coworking",
+                "Rooftop",
+                "Piscina",
+                "Rooftop Bar",
+                "Estacionamiento bicicletas",
+                "Salón de niños"
+            ]
+        },
+        {
+            "id": "58f88daf-4e70-4c36-af11-1999f2c32fb9",
+            "title": "Venta Departamento en San Isidro",
+            "address": "Calle La Republica 833, San Isidro, Lima",
+            "status": "",
+            "price_soles": 1608630,
+            "price_usd": 430000,
+            "area_m2": 135,
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "parking_spaces": 2,
+            "amenities": []
+        },
+        {
+            "id": "fbb6baf2-f12b-4731-96a0-a4c5dc41a6a3",
+            "title": "ABC Departamento",
+            "address": "las flores 111",
+            "status": "listo",
+            "price_soles": "100000",
+            "units": "2",
+            "bedrooms": "2",
+            "area_range_m2": "100",
+            "amenities": [
+                "parrilla",
+                " estacionamiento"
+            ]
+        },
+        {
+            "id": "51a59096-7bca-43dd-b44f-ff737f7a3528",
+            "title": "zzz",
+            "address": "some place 123",
+            "status": "ready",
+            "price_soles": "200000",
+            "units": "3",
+            "bedrooms": "2",
+            "area_range_m2": "100",
+            "amenities": [
+                "parrilla",
+                " estacionamiento"
+            ],
+            "photo": "/upload/photo-d0bf6e72-e4f3-4e04-b285-2d98687d2af5.jpg"
+        },
+        {
+            "id": "e91f5be8-140a-40ab-8a11-f19dd33405c6",
+            "title": "Disneyland",
+            "address": "abc 500",
+            "status": "listo",
+            "price_soles": "300000",
+            "units": "2",
+            "bedrooms": "3",
+            "area_range_m2": "150",
+            "amenities": [
+                ""
+            ],
+            "photo": "/upload/photo-d0bf6e72-e4f3-4e04-b285-2d98687d2af5.jpg"
+        },
+        {
+            "id": "199a42b7-5e20-4d7e-9af3-d7e6b237d486",
+            "title": "Huacachina",
+            "address": "laguna 100",
+            "status": "listo",
+            "price_soles": "150000",
+            "units": "2",
+            "bedrooms": "2",
+            "area_range_m2": "100",
+            "amenities": [
+                ""
+            ],
+            "photo": "/upload/photo-d0bf6e72-e4f3-4e04-b285-2d98687d2af5.jpg"
+        },
+        {
+            "id": "92a19194-1f44-433f-bfa6-d8881b075dad",
+            "title": "Star Wars",
+            "address": "lima 222",
+            "status": "listo",
+            "price_soles": "100000",
+            "units": "2",
+            "bedrooms": "2",
+            "area_range_m2": "100",
+            "amenities": [
+                "parrilla",
+                " estacionamiento"
+            ],
+            "photo": "/upload/photo-d0bf6e72-e4f3-4e04-b285-2d98687d2af5.jpg"
+        },
+        {
+            "id": "1772eca8-f950-4b56-ae46-37e14f9daff5",
+            "title": "Cuzco",
+            "address": "las flores 123",
+            "status": "ready",
+            "price_soles": "100000",
+            "units": "2",
+            "bedrooms": "2",
+            "area_range_m2": "100",
+            "amenities": [
+                "parrilla",
+                " estacionamiento"
+            ],
+            "photo": "/upload/photo-9de5dcd8-4bb2-4b85-bc28-fec43bdf128e.webp"
+        }
+    ]
+}

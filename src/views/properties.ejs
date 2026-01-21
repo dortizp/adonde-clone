@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Departamentos</h1>
+        <div class="filters">
+            <h3>Filtro de precio</h3>
+            <form action="/" method="GET">
+                <label for="min">Desde</label>
+                <input type="text" id="min" name="min">
+                <label for="max">Hasta</label>
+                <input type="text" id="max" name="max">
+                <button type="subtmi">Filtrar</button>
+                <a href="/" class="btn">Limpiar Filtros</a>
+            </form>
+        </div>
+        <div class="properties">
+            <p>Mostrado <%= length %> departamentos disponibles</p>
+            <% properties.map(property => { %>
+                <div class="property">
+                    <a href="/<%= property.id %>/mortgage-calculator">Simulador Prestamo Hipotecario</a>
+                    <p>title: <%= property.title %></p>
+                    <p>address: <%= property.address %></p>
+                    <p>status: <%= property.status %></p>
+                    <p>price_soles: <%= property.price_soles %></p>
+                    <p>units: <%= property.units %></p>
+                    <p>bedrooms: <%= property.rooms %></p>
+                    <p>area_range_m2: <%= property.area_range_m2 %></p>
+                    <p>amenities: 
+                        <% property.amenities.map(amenity => { %>
+                            <span class="amenity"><%= amenity %></span>
+                        <% }) %> 
+                    </p>
+                    <p><img src="<%= property.photo %>" alt="<%= property.title %>"></p>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>
