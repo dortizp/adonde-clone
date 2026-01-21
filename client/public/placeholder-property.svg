@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect fill="#F7F7F7" width="400" height="300"/>
+  <g fill="#DDDDDD">
+    <path d="M200 80 L260 130 L260 180 L140 180 L140 130 Z"/>
+    <rect x="155" y="140" width="30" height="40"/>
+    <rect x="215" y="140" width="30" height="40"/>
+    <rect x="175" y="155" width="50" height="25"/>
+  </g>
+  <text x="200" y="220" font-family="system-ui, sans-serif" font-size="14" fill="#717171" text-anchor="middle">Sin imagen disponible</text>
+</svg>

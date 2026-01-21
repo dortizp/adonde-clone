@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-secondary antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-hover text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-surface text-secondary font-semibold py-3 px-6 rounded-lg border border-border transition-colors duration-200;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-white rounded-xl border border-border overflow-hidden transition-shadow duration-200 hover:shadow-card;
+  }
+}
+
+/* Leaflet overrides for Airbnb style */
+.leaflet-popup-content-wrapper {
+  @apply rounded-xl shadow-card border-0;
+}
+
+.leaflet-popup-tip {
+  @apply shadow-none;
+}
